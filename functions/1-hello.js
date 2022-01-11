@@ -24,7 +24,7 @@
 exports.handler = async (event, context) => {
   return {
     statusCode: 200,
-    body: "We have fixed the redirect in our code in the app js oooo hmmmm nawa for us",
+    body: "This is WABI BAAH first netlify function",
   }
 }
 

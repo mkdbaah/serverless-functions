@@ -46,7 +46,7 @@ const fetchData = async (event, context) => {
     const { data } = await axios.get("/api/2-basic-api")
     const products = data
       .map((product) => {
-        console.log(product)
+        // console.log(product)
         const {
           name,
           price,
@@ -77,3 +77,11 @@ fetchData()
 // we are using a template literal in the javascript file (interesting hah!)
 
 // the above gives data and this one parses the data into html
+
+// in netlify , go to domain settings, and go to build and deploy to get the environment variables
+// in a real deployment app you can make the function endpoints in an environment variable
+
+// below are the files that appeared in the network tab
+// index.html, axios.min.js, global.css, styles.css, app.js, logo.svg, 2-basic-api(the serverless function but only the response that we normally get from the server came but the link and everything came) , the product's images too that were from airtable also came
+
+// Request URL: https://dl.airtable.com/.attachments/da5e17fd71f50578d525dd5f596e407e/d5e88ac8/product-2.jpg

@@ -36,12 +36,11 @@ const result = document.querySelector(".result")
 
 const fetchData = async () => {
   try {
-    axios
     // const { data } = await axios.get("/.netlify/function/1-hello")
     const { data } = await axios.get("/api/1-hello")
     result.textContent = data
   } catch (error) {
-    console.log(error.response.data)
+    // console.log(error.response.data)
     result.textContent = error.response.data
   }
 }
